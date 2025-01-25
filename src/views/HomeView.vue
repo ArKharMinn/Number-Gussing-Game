@@ -1,7 +1,7 @@
 <template>
-  <div class="">
+  <div class="h-screen flex flex-col items-center justify-center">
     <div class="text-2xl font-bold">Number Guessing Game</div>
-    <div class="">Guess a number between 10 and 99!</div>
+    <div class="my-3">Guess a number between 10 and 99!</div>
     <div v-if="resultStatus" class="border p-3 border-blue-500 rounded" style="margin: 5px">
       <div>{{ resultStatus }}</div>
       <div>Your Number is {{ myNum }} | Ramdom Number is {{ randomNum }}</div>
@@ -20,7 +20,7 @@
       </button>
     </div>
     <div>
-      <small v-if="validate" class="text-red-500">{{ validate }}</small>
+      <small v-if="validate" class="text-red-500 text-center">{{ validate }}</small>
     </div>
   </div>
 </template>
